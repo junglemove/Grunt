@@ -1,0 +1,12 @@
+/************/
+/* init:
+/************/
+npm install -g grunt-cli
+npm install grunt --save-dev
+
+C:\Thibaut\workspace\NodeJS\Grunt>grunt
+A valid Gruntfile could not be found. Please see the getting started guide for
+more information on how to configure grunt: http://gruntjs.com/getting-started
+Fatal error: Unable to find Gruntfile.
+
+=> CREATE GruntFile
