@@ -74,3 +74,23 @@ grunt dist
 /*********************/
 npm install grunt-contrib-clean --save-dev
 npm install grunt-contrib-uglify --save-dev
+
+/*********************/
+/* Babel:
+/*********************/
+class MonBouton{} => in MonBouton.js, "class" keyword is ES6.
+grunt-contrib-uglify does not handle ES6
+transpile to ES5 thanks to bable:
+
+        babel: {
+            options: {
+                sourceMap: true,
+                presets: ['babel-preset-es2015']
+            },
+            dist: {
+                files: {
+                    'dist/js/index-browser-es5.js': 'dist/js/index-browser.js'
+                }
+            }
+        },
+
