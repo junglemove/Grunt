@@ -97,3 +97,9 @@ transpile to ES5 thanks to bable:
 /*********************/
 /* JIT Grunt:
 /*********************/
+
+
+/*********************/
+/* text-replace Grunt:
+/*********************/
+npm install grunt-text-replace --save-dev
