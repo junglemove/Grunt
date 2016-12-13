@@ -11,27 +11,27 @@ module.exports = function(grunt){
 
     grunt.initConfig({
 
-        "clean": ["dist"],
+        clean: ["dist"],
 
-        "browserify":{
-            "dist":{
-                "src":"src/js/index.js",
-                "dest":"dist/js/index-browser.js"
+        browserify:{
+            dist:{
+                src:"src/js/index.js",
+                dest:"dist/js/index-browser.js"
             }
         },
 
-        "copy":{
-            "dist":{
-                "files":[{
-                    "expand": true,
-                    "cwd": "src",
-                    "src": "index.html",
-                    "dest": "dist"
+        copy:{
+            dist:{
+                files:[{
+                    expand: true,
+                    cwd: "src",
+                    src: "index.html",
+                    dest: "dist"
                 },{
-                    "expand": true,
-                    "cwd": "src",
-                    "src": "js/*.js",
-                    "dest": "dist"
+                    expand: true,
+                    cwd: "src",
+                    src: "js/*.js",
+                    dest: "dist"
                 }]
             }
         },
@@ -39,18 +39,18 @@ module.exports = function(grunt){
         babel: {
             options: {
                 sourceMap: true,
-                presets: ['babel-preset-es2015']
+                presets: ["babel-preset-es2015"]
             },
             dist: {
                 files: {
-                    'dist/js/index-browser-es5.js': 'dist/js/index-browser.js'
+                    "dist/js/index-browser-es5.js": "dist/js/index-browser.js"
                 }
             }
         },
 
-        "uglify": {
-            "dist": {
-                "files": {
+        uglify: {
+            dist: {
+                files: {
                     "dist/js/index-browser-min.js": ["dist/js/index-browser-es5.js"]
                 }
             }
