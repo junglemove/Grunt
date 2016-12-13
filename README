@@ -51,3 +51,9 @@ npm install grunt-contrib-copy --save-dev
     })
 
 grunt copy:dist -v // -v to have more log info
+
+/*********************/
+/* grunt-browserify:
+/*********************/
+http://gruntjs.com/plugins => to look for other plugins, for exemple browserify
+npm install grunt-browserify --save-dev
