@@ -11,7 +11,7 @@ module.exports = function(grunt){
 
     grunt.initConfig({
 
-        clean: ["dist"],
+        clean: ["dist/js"],
 
         browserify:{
             dist:{
@@ -61,7 +61,7 @@ module.exports = function(grunt){
         "clean",
         "copy:dist",
         "browserify:dist",
-        "babel",
+        "babel:dist",
         "uglify:dist"
     ]);
 

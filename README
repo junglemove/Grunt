@@ -85,6 +85,7 @@ transpile to ES5 thanks to bable:
         babel: {
             options: {
                 sourceMap: true,
+                minified:true,      // minify the js file already (uglify becomes useless)
                 presets: ['babel-preset-es2015']
             },
             dist: {
