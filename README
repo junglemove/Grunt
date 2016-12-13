@@ -67,3 +67,10 @@ npm install grunt-browserify --save-dev
     ]);
 
 grunt dist
+
+/*********************/
+/* grunt-contrib-clean
+/* + grunt-contrib-uglify
+/*********************/
+npm install grunt-contrib-clean --save-dev
+npm install grunt-contrib-uglify --save-dev
