@@ -22,6 +22,32 @@ Manage scope -> link it t you project
 grunt default:build =>to run only build task
 grunt  => run all GruntFile.js tasks
 
-/************/
+/****************/
 /* Grunt vs Gulp:
+/****************/
+Grunt = config json, beaucoup de plugin
+Gulp = config js + stream => plus performant que Grunt
+
 /************/
+/* Grunt use:
+/************/
+https://www.npmjs.com/package/grunt-contrib-copy
+npm install grunt-contrib-copy --save-dev
+
+    grunt.loadNpmTasks('grunt-contrib-copy'); // use of template grunt-contrib-copy
+
+    grunt.initConfig({
+
+        "copy":{
+            "dist":{
+                "files":[{
+                    "expand": true,     //expand: true to create relative path
+                    "cwd": "src",
+                    "src": "index.html",
+                    "dest": "dist"
+                }]
+            }
+        }
+    })
+
+grunt copy:dist -v // -v to have more log info
