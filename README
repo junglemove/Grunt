@@ -57,3 +57,13 @@ grunt copy:dist -v // -v to have more log info
 /*********************/
 http://gruntjs.com/plugins => to look for other plugins, for exemple browserify
 npm install grunt-browserify --save-dev
+
+/*********************/
+/* ordonnancer les tasks grunt:
+/*********************/
+    grunt.registerTask('dist',[
+        "copy:dist",
+        "browserify:dist"
+    ]);
+
+grunt dist
