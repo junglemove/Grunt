@@ -56,6 +56,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         myBtn.click();
         myBtn.click();
         myBtn.click();
+        myBtn.click();
+        myBtn.click();
 
         console.log(myBtn.toString()); // <button>3</button>
     }, { "./Monbouton.js": 1 }], 3: [function (require, module, exports) {

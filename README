@@ -99,6 +99,16 @@ transpile to ES5 thanks to bable:
 /*********************/
 
 /*********************/
+/* text-replace Grunt:
+/*********************/
+npm install grunt-text-replace --save-dev
+
+/*********************/
 /* Grunt contrib-watch:
 /*********************/
+npm install grunt-contrib-watch --save-dev
 rebuild if some specific files have been modified
+/*********************/
+/* Grunt contrib-concat:
+/*********************/
+pour minifier le CSS
