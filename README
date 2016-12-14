@@ -97,3 +97,8 @@ transpile to ES5 thanks to bable:
 /*********************/
 /* JIT Grunt:
 /*********************/
+
+/*********************/
+/* Grunt contrib-watch:
+/*********************/
+rebuild if some specific files have been modified
